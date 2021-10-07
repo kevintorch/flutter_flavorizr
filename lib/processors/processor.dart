@@ -135,7 +135,7 @@ class Processor extends AbstractProcessor<void> {
         AndroidBuildGradleProcessor(pubspec.flavorizr),
       ),
       'android:dummyAssets': AndroidDummyAssetsProcessor(
-        K.tempAndroidResPath,
+        K.tempAndroidPath,
         K.androidSrcPath,
         pubspec.flavorizr.flavors,
       ),
@@ -145,14 +145,14 @@ class Processor extends AbstractProcessor<void> {
         K.flutterFlavorPath,
         FlutterFlavorsProcessor(pubspec.flavorizr.flavors),
       ),
-      'flutter:app': CopyFileProcessor(
-        K.tempFlutterAppPath,
-        K.flutterAppPath,
-      ),
-      'flutter:pages': CopyFolderProcessor(
-        K.tempFlutterPagesPath,
-        K.flutterPagesPath,
-      ),
+      // 'flutter:app': CopyFileProcessor(
+      //   K.tempFlutterAppPath,
+      //   K.flutterAppPath,
+      // ),
+      // 'flutter:pages': CopyFolderProcessor(
+      //   K.tempFlutterPagesPath,
+      //   K.flutterPagesPath,
+      // ),
       'flutter:targets': FlutterTargetsFileProcessor(
         K.tempFlutterMainPath,
         K.flutterPath,

@@ -34,10 +34,10 @@ class FlutterTargetFileProcessor extends QueueProcessor {
       : super([
           CopyFileProcessor(
             source,
-            '$destination/main-$flavorName.dart',
+            '$destination/main_$flavorName.dart',
           ),
           RuntimeFileStringProcessor(
-            '$destination/main-$flavorName.dart',
+            '$destination/main_$flavorName.dart',
             ReplaceStringProcessor(
               '[[FLAVOR_NAME]]',
               flavorName.toUpperCase(),

@@ -36,7 +36,7 @@ void execute(List<String> args) {
   ArgResults results = argParser.parse(args);
   List<String> argProcessors = results['processors'];
 
-  Parser parser = Parser(file: 'pubspec.yaml');
+  Parser parser = Parser(file: 'app_flavors.yaml');
 
   Pubspec? pubspec;
   try {

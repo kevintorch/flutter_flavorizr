@@ -35,7 +35,7 @@ class AndroidDummyAssetsProcessor extends QueueProcessor {
                 flavorName,
                 DummyAssetsProcessor(
                   source,
-                  '$destination/$flavorName/res',
+                  '$destination/$flavorName',
                   flavor.android,
                 )))
             .values);
